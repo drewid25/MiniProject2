@@ -2,6 +2,11 @@ import React from 'react'
 import Character from './Character'
 import Loading from './Loading'
 import {useGlobalContext} from '../context'
+//Bootstrap
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 const CharacterList = () => {
   const { characters, loading } = useGlobalContext();
 
