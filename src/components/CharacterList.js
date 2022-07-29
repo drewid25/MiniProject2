@@ -2,6 +2,7 @@ import React from 'react'
 import Character from './Character'
 import Loading from './Loading'
 import {useGlobalContext} from '../context'
+
 const CharacterList = () => {
   const { characters, loading } = useGlobalContext();
 

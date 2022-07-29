@@ -37,42 +37,58 @@ code {
     monospace;
 }
 
-.navBrand{
-  color:red !important;
-  font-size: 2rem !important;
+.navBrand img {
+  height: 5rem;
+  width: 5rem;
 }
 
 
 .container{
-
   display: flex !important;
   justify-content: space-between !important;
   padding:2rem 5rem !important;
+
+}
+
+.toggle {
+  color: white !important;
 }
 .nav{
   margin-left:20rem !important;
+
 }
 
 .link{
   font-size:1rem !important;
-  font-weight:bold !important;
-  text-transform: uppercase !important;
-  color:var(--text-color) !important;
+  text-transform: uppercase;
+  color:white !important;
+  text-decoration: none !important;
 }
 
 .button {
     background-color: var(--accent-color) !important;
   
-    font-weight: 800 !important;
+    font-weight: 600 !important;
     border-radius:.9rem !important;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    text-transform: uppercase;
     margin-left: var(--margin-left)!important;
     border: none;
 }
+
+.button a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+.button a:hover {
+  border-bottom: 3px solid white;
+  color: white !important;
+}
+
 .nav-button  {
     text-decoration: none;
     color: var(--primary-color);
@@ -81,6 +97,7 @@ code {
 .section {
   padding: 5rem 0;
 }
+
 .section-title {
   font-size: 2rem;
   text-transform: capitalize;
