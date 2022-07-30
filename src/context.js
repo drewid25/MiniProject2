@@ -16,7 +16,7 @@ const AppProvider = ({ children }) => {
       const newChar = []
       for (const datos in data) {
         const char = data[datos]
-              newChar.push(char)
+        newChar.push(char)
              
       }
 
@@ -45,7 +45,7 @@ const AppProvider = ({ children }) => {
             apprentices,
           } = item
           return {
-             id,
+            id,
             name,
             height,
             mass,
@@ -68,13 +68,31 @@ const AppProvider = ({ children }) => {
           }
           
         })
-setCharacters(newCharacters)
+      console.log(newCharacters)
+const newlistCharacters = newCharacters.filter(character => {
+    if (character.id !== 26
+      && character.id !== 28
+      && character.id !== 37
+      && character.id !== 43
+      && character.id !== 47
+      && character.id !== 49
+      && character.id !== 56
+      && character.id !== 57
+      && character.id !== 61
+      && character.id !== 64
+      && character.id !== 77
+      && character.id !== 82
+    ) {
+      return character
+    }
+  })
+setCharacters(newlistCharacters)
       } else {
         setCharacters([])
-      } 
-      console.log(characters)
+      }
+   
       setLoading(false)
-      }catch (error) {
+    } catch (error) {
       console.log(error)
       setLoading(false)
     }
@@ -82,11 +100,18 @@ setCharacters(newCharacters)
 
   useEffect(() => {
     fetchCharacters()
-  },[searchTerm])
+  }, [searchTerm])
+
+
+  
+
+  console.log(characters)
+
   return <AppContext.Provider
     value={{
       loading,
       characters,
+      setCharacters,
       setSearchTerm,
     }}
   >{children}</AppContext.Provider>
