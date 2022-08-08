@@ -15,14 +15,20 @@ const CharacterList = () => {
    ) 
   }
   return (
-    <section className='section'>
-      <h2 className='section-title'>Characters</h2>
-      <div className="character-center">
-        {characters.map((item) => {
+    <>
+    <section className='section' >
+      <h2 className='character-title'>Characters</h2>
+  
+      <div className="character-div">
+          {characters.map((item) => {
+         console.log(item.id)
           return <Character key={item.id} {...item}/>
         })}
       </div>
-    </section>
+     
+      
+      </section>
+      </>
   )
 }
 
