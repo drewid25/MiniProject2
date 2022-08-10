@@ -10,26 +10,23 @@ import { Col, Row, Button } from 'antd';
 
 const Character = ({image,name,id}) => {
   return (
-    <>
-      <Row>
-        <Col  >
-        <article className='character'  >
-          <div className='img-container'>
-            <img src={image} alt={name} />
+ 
+      
+        <article className=" grid grid-row-2 place-items-center bg-yellow6 p-6 align-center rounded-md sm:w-50 md:w-56 lg:w-72"  >
+          <div className="justify-center w-28 align-center">
+            <img  className="rounded-full h-24 w-24 text-center" src={image} alt={name} />
           </div>
 
-          <div className='character-footer'>
-            <h3>{name}</h3>
-              <Button type="primary">More Info</Button>
-              <Link 
+          <div className="mt-2">
+            <h4 className="text-white">{name}</h4>
+           <Link 
                 to={`/Character/:${id}`}
-                state={{id:id}}>
-              details </Link>
+                state={{id:id}} className='text-white no-underline'>
+              More Info </Link>
           </div>
         </article>
-        </Col>
-      </Row>
-    </>
+     
+  
         
 
   )

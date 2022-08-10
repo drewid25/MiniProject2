@@ -1,34 +1,37 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Navbar from 'react-bootstrap/Navbar'
-import Container from 'react-bootstrap/Container'
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Button from 'react-bootstrap/Button'
+import {Outlet} from "react-router-dom"
+
+
 import '../../src/index.css';
 const NavBar = () => {
-    return (
-      <Navbar expand='lg'>
-      <Container className="container">
-      <Link to ="/"><Navbar.Brand href="#" className="navBrand ">  <img src="https://www.mikeanddenises.com/wp-content/uploads/2018/04/star-wars-logo-981.png" alt="Star Wars Logo" className="logo-img" /></Navbar.Brand></Link>
-        
-        <Navbar.Toggle aria-controls="basic-navbar-nav" className='toggle'/>
-        <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ms-auto" basic-navbar-nav="true" >
-            <Link to="/"> <Nav.Link className= 'link' href="#home">Home</Nav.Link></Link>
-           <Link to="/About"> <Nav.Link   className= 'link' href="#link">About</Nav.Link></Link>
-                      
-            <Button className="button"><a href="#">Login</a></Button>
-            <Button className="button"><a href="#">Sign up</a></Button>
+  return (
+    <main className='bg-gray9'>
+      <nav className="relative container mx-auto p-6 " >
+        {/* Flex container */}
+        <div className="flex justify-between items-center ">
+          {/* logo */}
+          <div className="pt-2">
+            <Link to="/Home"><img  className=" h-5 w-24" src="https://www.mikeanddenises.com/wp-content/uploads/2018/04/star-wars-logo-981.png" alt="starwars-logo" /></Link>
             
-           
-          </Nav>
-        </Navbar.Collapse>
+          </div>
+          {/* Menu Items */}
+          <div className="hidden md:flex space-x-6">
+            <Link to="/Home" className="text-yellow7 no-underline">Home</Link>
+            <Link to="/About"  className="text-yellow7 no-underline">About us</Link>
+            <Link to="/Characters"  className="text-yellow7 no-underline">Characters</Link>
+            <Link to="/Movies"  className="text-yellow7 no-underline">Movies</Link>
+          </div>
+        </div>
 
-      </Container>
-            </Navbar>
+      </nav>
+      <div>
+          <Outlet/>
+      </div>
+     </main>
+      
           
   )
 }
 
-export default NavBar
+export default NavBar;
