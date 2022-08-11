@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import {Outlet} from "react-router-dom"
-
+import bgpic  from "../images/storm-trooper2.webp"
 
 import '../../src/index.css';
 const NavBar = () => {
@@ -11,16 +11,16 @@ const NavBar = () => {
         {/* Flex container */}
         <div className="flex justify-between items-center ">
           {/* logo */}
-          <div className="pt-2">
-            <Link to="/Home"><img  className=" h-5 w-24" src="https://www.mikeanddenises.com/wp-content/uploads/2018/04/star-wars-logo-981.png" alt="starwars-logo" /></Link>
-            
+          <div className="pt-2 flex">
+           <img src={bgpic} className="h-20 w-20 "alt="storm-trooper" />
+            <h4 className="text-gray0 ml-2">STAR <br></br>WARS <br></br> DB</h4>
           </div>
           {/* Menu Items */}
           <div className="hidden md:flex space-x-6">
-            <Link to="/Home" className="text-yellow7 no-underline">Home</Link>
-            <Link to="/About"  className="text-yellow7 no-underline">About us</Link>
-            <Link to="/Characters"  className="text-yellow7 no-underline">Characters</Link>
-            <Link to="/Movies"  className="text-yellow7 no-underline">Movies</Link>
+            <Link to="/Home" className="text-gray0 no-underline">HOME</Link>
+            <Link to="/About"  className="text-gray0 no-underline">ABOUT US</Link>
+            <Link to="/Characters"  className="text-gray0 no-underline">CHARACTERS</Link>
+            <Link to="/Movies"  className="text-gray0 no-underline">MOVIES</Link>
           </div>
         </div>
 

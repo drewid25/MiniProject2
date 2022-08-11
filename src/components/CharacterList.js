@@ -3,6 +3,7 @@ import Character from './Character'
 import Loading from './Loading'
 import {useGlobalContext} from '../context'
 import SearchForm from "../components/SeachForm"
+import bgpic  from "../images/storm-trooper2.webp"
 const CharacterList = () => {
   const { characters, setCharacters, loading } = useGlobalContext();
 
@@ -16,9 +17,9 @@ const CharacterList = () => {
   }
   return (
     <>
-      <section className='mt-5 ' >
-        <SearchForm/>>
-      <h2 className='text-center text-white'>Characters</h2>
+      <section className='mt-5'  >
+        <SearchForm/>
+      <h2 className='text-center text-white mt-5'>Characters</h2>
   
       <div className=" p-6 w-screen grid grid-cols-6 gap-y-5 md:grid-cols-3 lg:grid-cols-4 slg:grid-cols-3 mlg:grid-cols-4 xl:grid-cols-5 xxl:grid-cols-6 sm:grid-cols-1 xsm:grid-cols-1 text-center" >
           {characters.map((item) => {

@@ -17,9 +17,12 @@ module.exports = {
         yellow7: "#f59f00",
         yellow8: "#f08c00",
         yellow6: "#fab005",
+        gray0: "#f8f9fa",
+        gray2: "#e9ecef",
+        gray6: "#868e96",
         gray7: "#495057",
         gray8: "#343a40",
-        gray9:"#343a40"
+        gray9:"#212529"
       }
     },
   },
