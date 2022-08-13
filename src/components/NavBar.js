@@ -1,19 +1,25 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import {Outlet} from "react-router-dom"
-import bgpic  from "../images/storm-trooper2.webp"
+import bgpic  from "../images/storm-trooper4.png"
+import hero from '../images/starwars-galaxy.jpg'
+
 
 import '../../src/index.css';
 const NavBar = () => {
   return (
-    <main className='bg-gray9'>
-      <nav className="relative container mx-auto p-6 " >
+    <main className='bg-gradient-to-r from-white-500 bg-cover bg-center'
+    style={{ 
+    backgroundImage: `url(${hero})`,
+    height: `100%`,
+    backgroundAttachment: 'fixed'
+  }}>
+      <nav className="relative container mx-auto p-3">
         {/* Flex container */}
         <div className="flex justify-between items-center ">
           {/* logo */}
           <div className="pt-2 flex">
-           <img src={bgpic} className="h-20 w-20 "alt="storm-trooper" />
-            <h4 className="text-gray0 ml-2">STAR <br></br>WARS <br></br> DB</h4>
+           <img src={bgpic} className="h-20 w-480 "alt="storm-trooper" />
           </div>
           {/* Menu Items */}
           <div className="hidden md:flex space-x-6">
