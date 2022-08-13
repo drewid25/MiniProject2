@@ -1,15 +1,18 @@
 import React from 'react'
-import CharacterList from '../components/CharacterList'
-import SearchForm from '../components/SeachForm'
-import hero from '../images/star-wars-poster-hero.jpg'
+//Components
 const Home = () => { 
-  return (
-    <main className="bg-gray9">
 
-      <div className="w-screen h-800 ">
-        <img src={hero} alt="" />
+  return ( 
+    <div className='flex justify-center items-center text-center'
+      style={{ 
+      height: `86.9vh`,
+    }}>
+    <div>
+      <h1 className='text-gray0 text-8xl font-extrabold'>WELCOME TO STARWARS CHARACTER DATABASE</h1>
+      <button className='bg-gray9 text-gray0 border-none p-6 mt-6'>SEARCH CHARACTERS</button>
     </div>
-    </main>
+    
+    </div>
 )
 }
 
