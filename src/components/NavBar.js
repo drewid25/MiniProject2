@@ -11,7 +11,7 @@ const NavBar = () => {
     <main className='bg-gradient-to-r from-white-500 bg-cover bg-center'
     style={{ 
     backgroundImage: `url(${hero})`,
-    height: `100%`,
+  height: `100vh`,
     backgroundAttachment: 'fixed'
   }}>
       <nav className="relative container mx-auto p-3">
