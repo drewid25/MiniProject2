@@ -17,10 +17,11 @@ function App() {
        <Routes>
           
 
-            <Route path='Home' element={<Home />} />
-            <Route path='About' element={<About />} />
-            <Route path='Characters'element={<CharacterList/>}/>
-            <Route path='Character/:id' element={<SingleCharacter/>} />
+            <Route path='' element={<Home />} />
+            <Route path='/Home' element={<Home />} />
+            <Route path='/About' element={<About />} />
+            <Route path='/Characters'element={<CharacterList/>}/>
+            <Route path='/Character/:id' element={<SingleCharacter/>} />
             <Route path='*' element={<Error/>} />
       
         </Routes>

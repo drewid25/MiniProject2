@@ -1,9 +1,18 @@
 import React from 'react'
+import NavBar from '../components/NavBar'
+import hero from '../images/starwars-galaxy.jpg'
 //Components
 const Home = () => { 
 
   return ( 
-    <div className='flex justify-center items-center text-center'
+    <main
+     style={{
+        backgroundImage: `url(${hero})`,
+        height: `100vh`,
+        backgroundAttachment: 'fixed'
+      }}>
+      <NavBar/>
+  <div className='flex justify-center items-center text-center'
       style={{ 
       height: `86.9vh`,
     }}>
@@ -13,6 +22,8 @@ const Home = () => {
     </div>
     
     </div>
+    </main>
+  
 )
 }
 
