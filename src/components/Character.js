@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Col, Row, Button } from 'antd';
-import bgpic  from "../images/storm-trooper2.webp"
+import bgpic from "../images/storm-trooper2.webp"
+import hero from '../images/starwars-galaxy.jpg'
 //Bootstrap 5
 // import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
@@ -13,7 +14,9 @@ const Character = ({image,name,id}) => {
   return (
  
       
-        <article className=" grid grid-row-2 place-items-center bg-yellow8 p-6 drop-shawdow-2xl align-center rounded-md sm:w-50 md:w-56 lg:w-72"  >
+    <article
+       
+      className=" grid grid-row-2 place-items-center bg-yellow8 p-6  align-center rounded-md sm:w-50 md:w-56 lg:w-72 hover:bg-yellow6 hover:drop-shadow-2xl "  >
           <div className=" grid justify-center w-28 align-center place-items-center">
             <img  className="rounded-full border-2 border-gray0 h-24 w-24 text-center" src={image} alt={name} />
           </div>
@@ -23,7 +26,7 @@ const Character = ({image,name,id}) => {
    
            <Link 
                 to={`/Character/:${id}`}
-                state={{id:id}} className='text-gray0 no-underline'>
+                state={{id:id}} className='text-gray0 no-underline hover:bg-white hover:p-2 hover:text-black hover:rounded-full hover:p-2'>
               More Info </Link>
           </div>
         </article>

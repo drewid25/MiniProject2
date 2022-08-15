@@ -1,6 +1,7 @@
 import React, { useEffect,useState } from 'react'
 import {useLocation} from 'react-router-dom';
 import Loading from '../components/Loading'
+import hero from '../images/starwars-galaxy.jpg'
 const Link = require("react-router-dom").Link;
 const url ="https://akabab.github.io/starwars-api/api/id/"
 const SingleCharacter = () => {
@@ -18,7 +19,12 @@ const Id = location.state.id
   }, [])
   console.log(data)
   return (
-    <main className="bg-gray9 p-3 h-screen ">
+    <main className="p-3 h-screen"
+     style={{
+        backgroundImage: `url(${hero})`,
+        height: `100vh`,
+        backgroundAttachment: 'fixed'
+      }}>
      
       <article className="flex w-8/12 mx-auto mt-5 p-4 justify-center bg-yellow6 rounded-lg">
       <div className="flex flex-col align-bottom  items-center mr-5">

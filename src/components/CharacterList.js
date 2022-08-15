@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 import Character from './Character'
 import Loading from './Loading'
-import {useGlobalContext} from '../context'
-
+import { useGlobalContext } from '../context'
+import NavBar from '../components/NavBar'
+import hero from '../images/starwars-galaxy.jpg'
 import bgpic  from "../images/storm-trooper2.webp"
 const CharacterList = () => {
   const { characters, setCharacters, loading } = useGlobalContext();
@@ -16,13 +17,20 @@ const CharacterList = () => {
    ) 
   }
   return (
-    <>
-      <section className='mt-5'  >
-        <div>
+
+    <section className=' overflow-y-auto p-6'
+      style={{
+        backgroundImage: `url(${hero})`,
+        height: `100vh`,
+        backgroundAttachment: 'fixed'
+      }}
+    >
+      <NavBar/>
+        <div className="mt-5 grid items-place-center p-3">
           <input
-            className="ml-5 h-8 p-6 w-72"
+            className="ml-5 h-8 p-6 w-full rounded-full hover:outline-yellow6"
             type="text"
-            placeholder="Search"
+            placeholder="Search Character"
             onChange={(e) => { setSearch(e.target.value) }} />
        </div>
       <h2 className='text-center text-white mt-5'>Characters</h2>
@@ -42,7 +50,7 @@ const CharacterList = () => {
      
       
       </section>
-      </>
+    
   )
 }
 
