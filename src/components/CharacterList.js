@@ -21,6 +21,7 @@ const CharacterList = () => {
     <section className=' overflow-y-auto p-6'
       style={{
         backgroundImage: `url(${hero})`,
+        opacity:10,
         height: `100vh`,
         backgroundAttachment: 'fixed'
       }}
