@@ -8,32 +8,27 @@ import hero from '../images/starwars-galaxy.jpg'
 import '../../src/index.css';
 const NavBar = () => {
   return (
-    <main className='bg-gradient-to-r from-white-500 bg-cover bg-center'
-    style={{ 
-    backgroundImage: `url(${hero})`,
-  height: `100vh`,
-    backgroundAttachment: 'fixed'
-  }}>
-      <nav className="relative container mx-auto p-3">
+    <main className='bg-blend-normal from-white-500 bg-cover bg-center'
+>
+      <nav className="relative container mx-auto p-6">
         {/* Flex container */}
         <div className="flex justify-between items-center ">
           {/* logo */}
-          <div className="pt-2 flex">
+          <div className="pt-2">
            <img src={bgpic} className="h-20 w-480 "alt="storm-trooper" />
           </div>
           {/* Menu Items */}
-          <div className="hidden md:flex space-x-6">
-            <Link to="/Home" className="text-gray0 no-underline">HOME</Link>
-            <Link to="/About"  className="text-gray0 no-underline">ABOUT US</Link>
-            <Link to="/Characters"  className="text-gray0 no-underline">CHARACTERS</Link>
-            <Link to="/Movies"  className="text-gray0 no-underline">MOVIES</Link>
+          <div className="hidden md:flex space-x-6 text-bold">
+            <Link to="/Home" className="text-gray0 no-underline hover:text-yellow6 font-sans">HOME</Link>
+            <Link to="/About"  className="text-gray0 no-underline hover:text-yellow6  font-sans">ABOUT US</Link>
+            <Link to="/Characters"  className="text-gray0 no-underline hover:text-yellow6 font-sans">CHARACTERS</Link>
+            <Link to="/Movies"  className="text-gray0 no-underline hover:text-yellow6 font-sans">MOVIES</Link>
           </div>
+          <Link to="/" className="hidden lg:block p-3 font-sans px-6  bg-yellow6 rounded-full baseline text-white no-underline hover:bg-yellow6 hover:text-white"> Get Started</Link>
         </div>
-
+      
       </nav>
-      <div>
-          <Outlet/>
-      </div>
+    
      </main>
       
           
