@@ -36,7 +36,7 @@ const CharacterList = () => {
        </div>
       <h2 className='text-center text-white mt-5'>Characters</h2>
   
-      <div className=" container p-6 w-screen grid grid-cols-6 gap-3 md:grid-cols-3 lg:grid-cols-4 slg:grid-cols-3 mlg:grid-cols-4 xl:grid-cols-5 xxl:grid-cols-5 sm:grid-cols-1 xsm:grid-cols-1 text-center " >
+      <div className=" container p-6 w-screen grid grid-cols-1 gap-3 md:grid-cols-3 lg:grid-cols-4 slg:grid-cols-3 mlg:grid-cols-4 xl:grid-cols-5 xxl:grid-cols-5 sm:grid-cols-1 xsm:grid-cols-1 text-center " >
           {characters.filter((item) => {
             if (search == "") {
               return item
