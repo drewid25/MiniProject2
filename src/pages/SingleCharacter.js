@@ -26,18 +26,18 @@ const Id = location.state.id
         backgroundAttachment: 'fixed'
       }}>
      
-      <article className="flex w-8/12 mx-auto mt-5 p-4 justify-center bg-yellow6 rounded-lg">
-      <div className="flex flex-col align-bottom  items-center mr-5">
+      <article className="container flex flex-col w-8/12 mx-auto mt-5 p-4 justify-center bg-yellow6 rounded-lg">
+      <div className="container flex flex-col align-bottom  items-center mr-5">
           <img className="h-28 w-28  rounded-full " src={data.image} alt="" />
           <h4 className="mt-2 text-white uppercase">{data.name}</h4>
         </div>
-        <div className="bg-white p-6 w-full h-96">
-          <h5 className="uppercase"><span className="text-yellow8">Affilation: </span> [{data.affiliations}]</h5>
-          <h5 className="uppercase"><span className="text-yellow8 uppercase">Masters: </span> [{data.masters}]</h5>
-          <h5 className="uppercase"><span className="text-yellow8 uppercase">Species: </span> {data.species}</h5>
-          <h5 className="uppercase"><span className="text-yellow8 uppercase">Home World: </span> {data.homeworld}</h5>
+        <div className="bg-white p-6 w-full h-full">
+          <h5 className="uppercase"><span className="text-yellow6">Affilation: </span> [{data.affiliations}]</h5>
+          <h5 className="uppercase"><span className="text-yellow6 uppercase">Masters: </span> [{data.masters}]</h5>
+          <h5 className="uppercase"><span className="text-yellow6 uppercase">Species: </span> {data.species}</h5>
+          <h5 className="uppercase"><span className="text-yellow6 uppercase">Home World: </span> {data.homeworld}</h5>
 
-          <h5 className="uppercase"><span className="text-yellow8">Born Location: </span>{data.bornLocation}</h5>
+          <h5 className="uppercase"><span className="text-yellow6">Born Location: </span>{data.bornLocation}</h5>
         </div>
         <Link to="/Characters"> <button className="h-10 w-28 bg-yellow8 text-white"> Back</button></Link>
         

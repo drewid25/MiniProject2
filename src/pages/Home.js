@@ -27,7 +27,7 @@ const Home = () => {
             <Link to="/Characters" className=" font-sans py-2 text-center bg-yellow6 rounded-full  text-white no-underline hover:bg-yellow6 hover:text-white">Quick Search</Link>
           </div>
           <div className="flex flex-col mb-32 space-y-12 md:w-1/2">
-            <img src={rey} alt="" className="h-1/2
+            <img src={rey} alt="" className=" hidden h-1/2 md:block
             "/>
            </div>
         </div>

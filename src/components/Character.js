@@ -16,18 +16,18 @@ const Character = ({image,name,id}) => {
       
     <article
        
-      className=" grid grid-row-2 place-items-center bg-yellow8 p-6  align-center rounded-md sm:w-50 md:w-56 lg:w-72 hover:bg-yellow6 hover:drop-shadow-2xl "  >
+      className=" grid grid-row-2 place-items-center bg-yellow8 p-6  align-center rounded-md sm:w-50 md:w-56 lg:w-60   hover:bg-yellow6 hover:drop-shadow-2xl "  >
           <div className=" grid justify-center w-28 align-center place-items-center">
             <img  className="rounded-full border-2 border-gray0 h-24 w-24 text-center" src={image} alt={name} />
           </div>
 
           <div className="mt-2">
-        <h4 className="text-gray0">{name}</h4>
+      
    
            <Link 
                 to={`/Character/:${id}`}
                 state={{id:id}} className='text-gray0 no-underline hover:bg-white hover:p-2 hover:text-black hover:rounded-full hover:p-2'>
-              More Info </Link>
+                <h4 className="text-gray0">{name}</h4></Link>
           </div>
         </article>
      
