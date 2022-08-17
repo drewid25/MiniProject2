@@ -26,7 +26,7 @@ const Character = ({image,name,id}) => {
    
            <Link 
                 to={`/Character/:${id}`}
-                state={{id:id}} className='text-gray0 no-underline hover:bg-white hover:p-2 hover:text-black hover:rounded-full hover:p-2'>
+                state={{id:id}} className='text-gray0 no-underline '>
                 <h4 className="text-gray0">{name}</h4></Link>
           </div>
         </article>
