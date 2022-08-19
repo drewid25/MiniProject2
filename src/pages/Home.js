@@ -8,7 +8,7 @@ const Home = () => {
 
   return ( 
     <main
-        className="w-full h-screen bg-no-repeat bg-cover"
+        className="w-full sm:h-screen lg:h-full bg-no-repeat bg-cover"
      style={{
         backgroundImage: `url(${hero})`,
       
