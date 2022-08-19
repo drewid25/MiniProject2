@@ -21,7 +21,7 @@ const NavBar = () => {
                         </a>
                         <div className="md:hidden">
                             <button
-                                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-700 focus:border"
                                 onClick={() => setNavbar(!navbar)}
                             >
                                 {navbar ? (
@@ -65,9 +65,8 @@ const NavBar = () => {
                     >
                         <ul className="flex flex-col md:flex-row md:item-center items-center justify-center space-y-8 md:flex md:space-x-4 md:space-y-0">
                              <Link to="/Home" className="text-gray0 no-underline hover:text-yellow6 font-sans">HOME</Link>
-//             <Link to="/About"  className="text-gray0 no-underline hover:text-yellow6  font-sans">ABOUT US</Link>
-//             <Link to="/Characters"  className="text-gray0 no-underline hover:text-yellow6 font-sans">CHARACTERS</Link>
-//             <Link to="/Movies"  className="text-gray0 no-underline hover:text-yellow6 font-sans">MOVIES</Link>
+           <Link to="/About"  className="text-gray0 no-underline hover:text-yellow6  font-sans">ABOUT US</Link>             <Link to="/Characters"  className="text-gray0 no-underline hover:text-yellow6 font-sans">CHARACTERS</Link>
+           <Link to="/Movies"  className="text-gray0 no-underline hover:text-yellow6 font-sans">MOVIES</Link>
                         </ul>
                     </div>
                 </div>
