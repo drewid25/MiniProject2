@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import SingleCharacter from './pages/SingleCharacter'
 import Error from './pages/Error'
+import Movies from './pages/Movies'
 // import components
 import NavBar from './components/NavBar'
 
@@ -22,6 +23,7 @@ function App() {
             <Route path='/About' element={<About />} />
             <Route path='/Characters'element={<CharacterList/>}/>
             <Route path='/Character/:id' element={<SingleCharacter/>} />
+            <Route path='/Movies' element={<Movies/>} />
             <Route path='*' element={<Error/>} />
       
         </Routes>
