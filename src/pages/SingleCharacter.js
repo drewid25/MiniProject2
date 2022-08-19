@@ -40,11 +40,19 @@ const Id = location.state.id
         </div>
         <div className="bg-white p-6 w-full h-full">
           <h5 className="uppercase"><span className="text-yellow6">Affilation: </span> [{data.affiliations}]</h5>
+          <h5 className="uppercase"><span className="text-yellow6">Apprentices: </span> [{data.apprentices}]</h5>
           <h5 className="uppercase"><span className="text-yellow6 uppercase">Masters: </span> [{data.masters}]</h5>
           <h5 className="uppercase"><span className="text-yellow6 uppercase">Species: </span> {data.species}</h5>
+          <h5 className="uppercase"><span className="text-yellow6 uppercase">Height: </span> {data.height}</h5>
+          <h5 className="uppercase"><span className="text-yellow6 uppercase">Eye Color: </span> {data.eyeColor}</h5>
+          <h5 className="uppercase"><span className="text-yellow6 uppercase">Skin Color: </span> {data.skinColor}</h5>
           <h5 className="uppercase"><span className="text-yellow6 uppercase">Home World: </span> {data.homeworld}</h5>
 
           <h5 className="uppercase"><span className="text-yellow6">Born Location: </span>{data.bornLocation}</h5>
+          <h5 className="uppercase"><span className="text-yellow6">Died: </span>{data.died}</h5>
+          <h5 className="uppercase"><span className="text-yellow6">Died Location: </span>{data.diedLocation}</h5>
+          <h5 className="uppercase"><span className="text-yellow6">Wiki: </span><a href={data.wiki} className="no-underline text-black">{data.wiki}</a></h5>
+
         </div>
         <Link to="/Characters"> <button className="h-10 w-28 bg-yellow8 text-white mt-4"> Back</button></Link>
         
