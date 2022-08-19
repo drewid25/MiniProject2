@@ -61,7 +61,7 @@ const Id = location.state.id
                  <div className="mx-auto font-sans text-white mb-2 items-center grid place-items-center mt-7">
         <h1>Appeared In </h1>
       </div>
-      <div className="container gap-x-40 p-6 grid  grid-cols-1  md:grid-cols-2 lg:grid-cols-4 text-center   ">
+      <div className="container gap-x-80 p-6 grid  grid-cols-1  md:grid-cols-2 lg:grid-cols-4 text-center   ">
       {movies.map((movie) => {
         const { characters } = movie
         for (let char in characters) {
