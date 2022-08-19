@@ -1,7 +1,7 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import hero from '../images/starwars-galaxy.jpg'
-import rey from "../images/rey.png"
+import rey from "../images/rey.webp"
 import { Link } from 'react-router-dom'
 //Components
 const Home = () => { 
