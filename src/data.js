@@ -1,7 +1,7 @@
 import episode1 from "../src/images/Episode 1.webp"
 import episode2 from "../src/images/episode 2.webp"
 import episode3 from "../src/images/episode3.webp"
-import episode4 from "../src/images/episode 4.webp"
+import episode4 from "../src/images/episode4.webp"
 import episode5 from "../src/images/episode 5.webp"
 import episode6 from "../src/images/episode6.webp"
 const movies=[
