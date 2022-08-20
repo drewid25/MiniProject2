@@ -34,7 +34,8 @@ const Id = location.state.id
       >
      <NavBar />
       <article className="container flex flex-col   mx-auto mt-5 p-4 justify-center bg-yellow6  rounded-lg">
-      <div className="container flex flex-col align-bottom  items-center mr-5">
+      <div className="container flex flex-col align-bottom  items-center mr-5 relative">
+      <Link to="/Characters"> <button className="font-extrabold text-white text-2xl absolute right-0 hover:text-4xl"> X</button></Link>
           <img className="h-28 w-28  rounded-full " src={data.image} alt="" />
           <h4 className="mt-2 text-white uppercase">{data.name}</h4>
         </div>
