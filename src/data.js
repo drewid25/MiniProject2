@@ -7,7 +7,7 @@ import episode6 from "../src/images/episode6.webp"
 const movies=[
     {
         id:1,
-        title:"Star Wars: Episode I - The Phantom Menace",
+        title:"Episode I  The Phantom Menace",
         image: episode1,
         characters: ["Anakin Skywalker", "Obi-Wan Kenobi",
             "Qui-Gon Jinn", "Padmé Amidala",
@@ -22,7 +22,7 @@ const movies=[
 
     {
          id:2,
-        title:"Star Wars: Episode II - Attack of The Clones",
+        title:" Episode II  Attack of The Clones",
         image: episode2,
         characters: ["Anakin Skywalker", "Obi-Wan Kenobi",
             "Qui-Gon Jinn", "Padmé Amidala",
@@ -39,7 +39,7 @@ const movies=[
     },
      {
          id:3,
-        title:"Star Wars: Episode III - Revenge of The Sith",
+        title:"Episode III Revenge of The Sith",
         image: episode3,
         characters: ["Anakin Skywalker", "Obi-Wan Kenobi",
             "Qui-Gon Jinn", "Padmé Amidala",
@@ -57,7 +57,7 @@ const movies=[
         ]
     }, {
          id:4,
-         title:"Star Wars: Episode IV - A New Hope",
+         title: "Episode IV "+"    "+"A New Hope",
         image: episode4,
          characters: ["Luke Skywalker", "Leia Organa", "Darth Vader", "Han Solo",
              "Chewbacca", "Obi-Wan Kenobi",
@@ -68,7 +68,7 @@ const movies=[
     },
      {
          id:5,
-         title:"Star Wars: Episode V - The Empire Strikes Back",
+         title:" Episode V  The Empire Strikes Back",
         image: episode5,
          characters: ["Luke Skywalker", "Leia Organa", "Darth Vader", "Han Solo",
              "Chewbacca", "Obi-Wan Kenobi",
@@ -79,7 +79,7 @@ const movies=[
     },
       {
          id:6,
-         title:"Star Wars: Episode VI - Return Of The Jedi",
+         title:" Episode VI  Return Of The Jedi",
         image: episode6,
          characters: ["Luke Skywalker", "Leia Organa", "Darth Vader", "Han Solo",
              "Chewbacca", "Obi-Wan Kenobi",
