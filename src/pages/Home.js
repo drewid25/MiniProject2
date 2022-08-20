@@ -11,7 +11,7 @@ const Home = () => {
         className="w-fullh-screen lg:h-full bg-no-repeat bg-cover"
      style={{
         backgroundImage: `url(${hero})`,
-      
+        height: `100vh`
       }}
   >
       <NavBar />
