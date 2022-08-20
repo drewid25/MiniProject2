@@ -26,7 +26,7 @@ const Id = location.state.id
   console.log(data)
   return (
     
-    <main className="w-full h-full lg:h-full bg-no-repeat bg-cover"
+    <main className="w-full h-full lg:h-full bg-no-repeat bg-cover py-6"
      style={{
         backgroundImage: `url(${hero})`,
       
@@ -54,14 +54,14 @@ const Id = location.state.id
           <h5 className="uppercase"><span className="text-yellow6">Wiki: </span><a href={data.wiki} className="no-underline text-black">{data.wiki}</a></h5>
 
         </div>
-        <Link to="/Characters"> <button className="h-10 w-28 bg-yellow8 text-white mt-4"> Back</button></Link>
+        
         
       </article>
      
                  <div className="mx-auto font-sans text-white mb-2 items-center grid place-items-center mt-7">
         <h1>Appeared In </h1>
       </div>
-      <div className="container gap-x-80 md:gap-x-16 lg:gap-x-24 place-content-center mx-auto px-10 p-6 grid  grid-cols-1  md:grid-cols-3 lg:grid-cols-4 text-center   ">
+      <div className="container gap-x-80 md:gap-x-16 lg:gap-x-0  mx-auto px-10 p-6 grid  grid-cols-1  md:grid-cols-3 lg:grid-cols-3 text-center   ">
       {movies.map((movie) => {
         const { characters } = movie
         for (let char in characters) {
@@ -78,6 +78,10 @@ const Id = location.state.id
         
       })}     
       </div>
+      <div className="grid place-items-center mb-5">
+    <Link to="/Characters"> <button className="h-10 w-28 bg-yellow8 text-white justify-center mt-4"> Back</button></Link>
+      </div>
+     
      
     </main>
    

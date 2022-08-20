@@ -7,12 +7,12 @@ function Movies() {
     const [sagamovies,setSagamovies]= useState(movies)
     return (
 
-        <main     className="w-fullh-screen lg:h-full bg-no-repeat bg-cover"
+        <main className="w-fullh-screen lg:h-full bg-no-repeat bg-cover"
      style={{
         backgroundImage: `url(${hero})`,
       
       }}> <NavBar />
-           <div className="grid p-6 grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 mx-auto">
+           <div className="container px-6 mt-5 grid p-6 grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 mx-auto">
  {
             sagamovies.map((sagamovie) => {
                 const { title, image, characters } = sagamovie

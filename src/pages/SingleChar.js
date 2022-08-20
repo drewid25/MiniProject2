@@ -11,7 +11,7 @@ return (
  <div>
 <img src={image} alt={title} />
 </div>
-        <div className=" text-center text-white font-sans mt-2"><h4>{title}</h4></div>
+        <div className=" text-center text-black font-sans mt-2"><h4>{title}</h4></div>
     </div>
                             
                         )
