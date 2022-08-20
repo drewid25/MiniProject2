@@ -8,10 +8,10 @@ const Home = () => {
 
   return ( 
     <main
-        className="w-fullh-screen lg:h-full bg-no-repeat bg-cover"
+        className="w-full  bg-no-repeat bg-cover"
      style={{
         backgroundImage: `url(${hero})`,
-        height: `100vh`
+       
       }}
   >
       <NavBar />
@@ -27,8 +27,7 @@ const Home = () => {
             <Link to="/Characters" className=" font-sans py-2 text-center bg-yellow6 rounded-full  text-white no-underline hover:bg-yellow6 hover:text-white">Quick Search</Link>
           </div>
           <div className="flex flex-col mb-32 space-y-12 md:w-1/2">
-            <img src={rey} alt="" className=" hidden md:block
-            "/>
+            <img src={rey} alt="" className=" hidden md:block"/>
            </div>
         </div>
       </section>
