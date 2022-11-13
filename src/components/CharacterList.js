@@ -18,24 +18,25 @@ const CharacterList = () => {
   }
   return (
 
-    <section className=' overflow-y-auto p-6'
+    <section className=' overflow-y-auto  '
       style={{
         backgroundImage: `url(${hero})`,
+        opacity:10,
         height: `100vh`,
         backgroundAttachment: 'fixed'
       }}
     >
       <NavBar/>
-        <div className="mt-5 grid items-place-center p-3">
+        <div className=" mt-5 grid  w-50 container mx-auto ">
           <input
-            className="ml-5 h-8 p-6 w-full rounded-full hover:outline-yellow6"
+            className=" h-8 p-6  w-full text-center rounded-full hover:outline-yellow6"
             type="text"
             placeholder="Search Character"
             onChange={(e) => { setSearch(e.target.value) }} />
        </div>
       <h2 className='text-center text-white mt-5'>Characters</h2>
   
-      <div className=" p-6 w-screen grid grid-cols-6 gap-y-5 md:grid-cols-3 lg:grid-cols-4 slg:grid-cols-3 mlg:grid-cols-4 xl:grid-cols-5 xxl:grid-cols-6 sm:grid-cols-1 xsm:grid-cols-1 text-center" >
+      <div className=" container p-6 w-screen grid grid-cols-1 gap-3 md:grid-cols-3 lg:grid-cols-4 slg:grid-cols-3 mlg:grid-cols-4 xl:grid-cols-5 xxl:grid-cols-5 sm:grid-cols-1 xsm:grid-cols-1 text-center " >
           {characters.filter((item) => {
             if (search == "") {
               return item

@@ -1,17 +1,25 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import '../../src/index.css';
+import hero from '../images/starwars-galaxy.jpg'
 const About = () => {
   return (
-      <section className="section about-section h-screen"
-      style={{ 
-        height: `86.9vh`,
-      }}>
-          <h1 className="section-title">about us</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores deserunt velit qui expedita, dicta saepe aliquid quibusdam cupiditate nam ad quod quos hic repudiandae minima, aperiam quis repellendus similique illum.
-    Nostrum quam sapiente, corporis, optio accusantium repudiandae aperiam, exercitationem velit eligendi voluptas molestiae dolorum voluptate numquam possimus. Officia laboriosam eos numquam? Vitae blanditiis sapiente deleniti voluptates molestias, magni rem officiis.
-    Qui deleniti fuga ipsum ad veritatis aliquam, magni minus unde velit impedit maiores quasi? Consectetur, dolorem error nobis ex, incidunt aspernatur expedita quaerat adipisci iste quidem consequatur deleniti esse excepturi.</p>
-      </section>
+    <>
+    
+      <main        className="w-full h-screen lg:h-screen bg-no-repeat bg-cover"
+     style={{
+        backgroundImage: `url(${hero})`,
+      
+      }}
+      >
+        <NavBar />
+        <article className="container flex flex-col   mx-auto mt-5 p-4 justify-center bg-yellow6  rounded-lg" >
+      <h1 className="section-title text-center text-white font-sans">About us</h1>
+    <p className="font-sans text-white ">Our site are specifically made for Starwars movie fans who would like to know their favorite characters from different Starwars Saga. Fans have their fair share of biases when it comes to character preferences. Fans will surely enjoy.   </p>
+        </article>
+    
+      </main></>
+    
   )
 }
 
